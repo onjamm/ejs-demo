@@ -21,7 +21,22 @@
     <% if (user.age > 21) { %>
         <p>You're ready to party!</p>
         <% } else { %> 
-            <p>It's past your bedtime</p>
+        <p>It's past your bedtime</p>
     <% } %>
+
+    <h4>Hobbies</h4>
+    <ul>
+    <% user.hobbies.forEach(hobby => { %>
+        <li><%= hobby %></li>
+   <% }) %>
+   </ul>
+
+   
+    <h4>Classes</h4>
+    <ol>
+    <% user.classes.forEach(course => { %>
+        <li><%= course %></li>
+   <% }) %>
+    </ol>
 </body>
 </html>

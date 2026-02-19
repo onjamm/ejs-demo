@@ -12,7 +12,9 @@ app.get('/', (req, res) => {
         color: "purple",
         food: "pizza",
         grade: 2.5,
-        age: 23
+        age: 23,
+        hobbies: ['kendama', 'skateboarding', 'chess'],
+        classes: ['SDEV301', 'SDEV305', 'ENGL&335']
     }
     res.render('home', {user});
 });
